@@ -1,0 +1,13 @@
+<h1>{{ title }}</h1>
+<hr>
+<div>
+    <app-list class="my-4" [items]="items"></app-list>
+</div>
+
+<nav class="nav d-flex gap-2 justify-content-center">
+    <button class="btn btn-outline-primary btn-xsmall" (click)="updateItems(10)">10</button>
+    <button class="btn btn-outline-primary btn-xsmall" (click)="updateItems(5)">5</button>
+    <button class="btn btn-outline-primary btn-xsmall" (click)="updateItems(15)">15</button>
+    <button class="btn btn-outline-primary btn-xsmall" (click)="showFirst()">show first</button>
+    <button class="btn btn-outline-primary btn-xsmall" (click)="showLast()">show last</button>
+</nav>

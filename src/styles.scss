@@ -1,0 +1,6 @@
+@use 'bootstrap/scss/bootstrap' as bs;
+@use 'bootstrap-icons/font/bootstrap-icons';
+
+body {
+    padding: 2 * bs.$spacer;
+}

@@ -1,0 +1,10 @@
+<ng-container *ngIf="items!.length > 0; else noItems">
+    <div class="list" #scrollView listScrollView>
+        <ng-container *ngFor="let item of items; trackBy: trackBy">
+            <div class="list-item" #listScrollViewItem>{{ item }}</div>
+        </ng-container>
+    </div>
+</ng-container>
+<ng-template #noItems>
+    <p>No items</p>
+</ng-template>
